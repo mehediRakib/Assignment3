@@ -2,7 +2,7 @@
 
 function printObjectProperties(object){
     for( let i in object){
-        if(object[i]==null)
+        if (Object.keys(object).length === 0)
         {
             console.log("Object is empty");
         }
@@ -13,10 +13,10 @@ function printObjectProperties(object){
 
 }
 var laptop={
-    // brand:'dell',
-    // gen:'10th',
-    // core:'i3',
-    // touchscree:false
+    brand:'dell',
+    gen:'10th',
+    core:'i3',
+    touchscree:false
 
 }
 printObjectProperties(laptop)
